@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+    contactame.html
+
+    Santana Celaya Alec Demian
+    ID: 216750
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contactame</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://apps2.itson.edu.mx/SIPA/Content/Mantenimiento_files/ITSONMARCA2.png" alt="Logo" />
+
+        <br>
+        <h1>
+            Contactame
+        </h1>
+        <br>
+
+        <a href="mailto:alec.santana216750@potros.itson.edu.mx">
+            <img class="second-logo" src="../assets/img/gmail.png" alt="SecondLogo" />
+        </a>
+        <br>
+    </header>
+
+    <br>
+    <nav class="links">
+        <a href="index.html"> Home </a>
+        <a href="hobbies.html"> Aficiones </a>
+        <a href="contactame.html"> Contactame </a>
+    </nav>
+
+    <main>
+        <br>
+        <br>
+        <h1>Contatame para ser amigos</h1>
+        <br>
+        <div class="DivForm">
+            <form action="mailto: alec.santana216750@potros.itson.edu.mx?subject=Contacto" method=post
+                enctype="text/plain">
+
+                <p>
+                    <label for="nombreId">Nombre: </label>
+                    <input type="text" id="nombreId" name="nombre" size=15 maxlenght=40 required />
+                </p>
+
+                <p>
+                    <label for="direccionId">Dirección: </label>
+                    <br>
+                    <textarea id="direccionId" name="direccion" required rows="10"
+                        cols="50">Escribe tu dirección</textarea>
+                </p>
+
+                <p>
+                    <label for="emailId">E-mail: </label>
+                    <input type="email" id="emailId" name="email" required />
+                </p>
+
+                <p>
+                <fieldset>
+                    <legend for="ocupacionId">Ocupación: </legend>
+                    <select name="ocupacion">
+                        <option selected="selected">Trabajo</option>
+                        <optgroup label="Estudiante">
+                            <option>Preparatoria</option>
+                            <option>Universidad</option>
+                            <option>Maestría</option>
+                            <option>Otro/Superior</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                </p>
+
+                <p>
+                <fieldset>
+                    <legend>Sexo:</legend>
+                    <input type="radio" id="hombre" name="sexo" value="Hombre">
+                    <label for="hombre">Hombre</label>
+                    <br>
+                    <input type="radio" id="mujer" name="sexo" value="Mujer">
+                    <label for="mujer">Mujer</label>
+                </fieldset>
+                </p>
+
+                <p>
+                    <label for="aficionesId">Aficiones: </label>
+                    <br>
+                    <textarea id="aficionesId" name="aficiones" required rows="10"
+                        cols="50">Escribe tus aficiones</textarea>
+                </p>
+
+
+                <p>
+                    <label for="origenId">Estado de origen: </label>
+                    <input type="text" id="origenId" name="origen" list="estadosId" />
+                </p>
+
+
+                <datalist id="estadosId">
+                    <option value="Son">Sonora</option>
+                    <option value="Sin">Sinaloa</option>
+                    <option value="Chi">Chihuahua</option>
+                    <option value="BCN">Baja California Norte</option>
+                    <option value="BCS">Baja California Sur "</option>
+                    <option value="Yuc">Yucatan</option>
+                    <option value="SLP">San Luis Potosi</option>
+                </datalist>
+
+                <p>
+                    <label>Tipo de mensaje de contacto</label><br>
+                    <input type="radio" name="Casual" id="ocio">
+                    <label for="ocio">Casual</label><br>
+                    <input type="radio" name="Queja" id="queja">
+                    <label for="queja">Queja</label><br>
+                    <input type="radio" name="Sugerencia" id="propuesta">
+                    <label for="propuesta">Sugerencia</label><br>
+                    <input type="radio" name="Otro" id="propuesta">
+                    <label for="propuesta">Otro</label><br>
+                </p>
+
+                <input type="submit" />
+                <input type="reset" value="Borrar" />
+
+            </form>
+    </main>
+    <footer>
+        <b>© 2022 Copyright: Santana Celaya Alec Demian Ing.software
+            <br>
+            alec.santana216750@potros.itson.edu.mx
+        </b>
+    </footer>
+    </main>
+</body>
+
+</html>
