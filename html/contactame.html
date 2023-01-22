@@ -9,7 +9,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contactame</title>
+    <title>Contact me</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
 </head>
 
@@ -18,53 +18,53 @@
         <img src="https://apps2.itson.edu.mx/SIPA/Content/Mantenimiento_files/ITSONMARCA2.png" alt="Logo" />
         <br>
         <h1>
-            Contactame
+            Contact me
         </h1>
     </header>
 
     <nav class="links">
         <a href="index.html"> Home </a>
-        <a href="hobbies.html"> Aficiones </a>
-        <a href="contactame.html"> Contactame </a>
+        <a href="hobbies.html"> Hobbies </a>
+        <a href="contactame.html"> Contat me </a>
     </nav>
     <br clear="both">
 
     <main>
         <br>
         <br>
-        <h1>Contatame para ser amigos</h1>
+        <h1>Contact me to be friends</h1>
         <br>
         <div class="DivForm">
             <form action="mailto: alec.santana216750@potros.itson.edu.mx?subject=Contacto" method=post
                 enctype="text/plain">
 
                 <p>
-                    <label for="nombreId">Nombre: </label>
+                    <label for="nombreId">Name: </label>
                     <input type="text" id="nombreId" name="nombre" size=15 maxlenght=40 required />
                 </p>
 
                 <p>
-                    <label for="direccionId">Dirección: </label>
+                    <label for="direccionId">Direction: </label>
                     <br>
                     <textarea id="direccionId" name="direccion" required rows="10"
-                        cols="50">Escribe tu dirección</textarea>
+                        cols="50">Write your addres</textarea>
                 </p>
 
                 <p>
-                    <label for="emailId">E-mail: </label>
+                    <label for="emailId">Email: </label>
                     <input type="email" id="emailId" name="email" required />
                 </p>
 
                 <p>
                 <fieldset>
-                    <legend for="ocupacionId">Ocupación: </legend>
+                    <legend for="ocupacionId">Occupation: </legend>
                     <select name="ocupacion">
-                        <option selected="selected">Trabajo</option>
-                        <optgroup label="Estudiante">
-                            <option>Preparatoria</option>
-                            <option>Universidad</option>
-                            <option>Maestría</option>
-                            <option>Otro/Superior</option>
+                        <option selected="selected">Job</option>
+                        <optgroup label="Student">
+                            <option>High school</option>
+                            <option>College</option>
+                            <option>Master's Degree</option>
+                            <option>Other</option>
                         </optgroup>
                     </select>
                 </fieldset>
@@ -72,25 +72,25 @@
 
                 <p>
                 <fieldset>
-                    <legend>Sexo:</legend>
+                    <legend>Sex:</legend>
                     <input type="radio" id="hombre" name="sexo" value="Hombre">
-                    <label for="hombre">Hombre</label>
+                    <label for="hombre">Male</label>
                     <br>
                     <input type="radio" id="mujer" name="sexo" value="Mujer">
-                    <label for="mujer">Mujer</label>
+                    <label for="mujer">Female</label>
                 </fieldset>
                 </p>
 
                 <p>
-                    <label for="aficionesId">Aficiones: </label>
+                    <label for="aficionesId">Hobbies: </label>
                     <br>
                     <textarea id="aficionesId" name="aficiones" required rows="10"
-                        cols="50">Escribe tus aficiones</textarea>
+                        cols="50">Share your hobbies</textarea>
                 </p>
 
 
                 <p>
-                    <label for="origenId">Estado de origen: </label>
+                    <label for="origenId">State: </label>
                     <input type="text" id="origenId" name="origen" list="estadosId" />
                 </p>
 
@@ -106,19 +106,19 @@
                 </datalist>
 
                 <p>
-                    <label>Tipo de mensaje de contacto</label><br>
-                    <input type="radio" name="Casual" id="ocio">
-                    <label for="ocio">Casual</label><br>
-                    <input type="radio" name="Queja" id="queja">
-                    <label for="queja">Queja</label><br>
-                    <input type="radio" name="Sugerencia" id="propuesta">
-                    <label for="propuesta">Sugerencia</label><br>
-                    <input type="radio" name="Otro" id="propuesta">
-                    <label for="propuesta">Otro</label><br>
+                    <label>Contact message type</label><br>
+                    <input type="radio" name="Casual" id="leisure">
+                    <label for="leisure">Casual</label><br>
+                    <input type="radio" name="Complaint" id="complaint">
+                    <label for="complaint">Complaint</label><br>
+                    <input type="radio" name="Suggestion" id="proposal">
+                    <label for="proposal">Suggestion</label><br>
+                    <input type="radio" name="Other" id="proposal">
+                    <label for="proposal">Other</label><br>
                 </p>
 
-                <input type="submit" />
-                <input type="reset" value="Borrar" />
+                <input type="submit" value="Send"/>
+                <input type="reset" value="Erase" />
 
             </form>
     </main>
