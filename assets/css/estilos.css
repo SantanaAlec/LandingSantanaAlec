@@ -1,0 +1,219 @@
+/*
+ * Hoja externa de estilo CSS
+ *
+ * Santana Celaya Alec D. ID:216750
+ */
+
+/*Cuerpo del documento 
+Con un estilo de letra, una imagen de fondo cubriendo todo el espacio y un color por si la imagen llega a fallar*/
+body {
+    font-family: Lato, sans-serif;
+    background-color: rgb(192, 211, 242);
+}
+
+/*Encabezado de página
+Establecido en una posición absoluta con el tecto centrado y letras de color blanco además de establecer una imagen de fondo que cubra todo*/
+header {
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(116, 159, 230);
+}
+
+/*Imagen del encabezado*/
+header>img {
+    float: left;
+    width: auto;
+    height: 180px;
+}
+
+/*Header tipo 1 del encabezado
+con el texto centrado y un estilo de letra*/
+header>h1 {
+    text-align: center;
+}
+
+/* Navegación*/
+/*Reglas de estilo para la clase del navegador
+Con un bloque a la derecha, el texto aliniado a la izquierda con un color de fondo y posición absoluta*/
+.links {
+    background-color: rgb(69, 132, 214);
+    background-size: cover;
+    border: 1px solid Silver;
+}
+
+/*Reglas para los elemento a
+Con un color de letra blanco sin decoración*/
+.links>a {
+    margin-left: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(238, 224, 224);
+    transition: 0.3s;
+}
+
+/*Reglas para el momento que el cursor pase por los elementos a
+Marcando una caja alrededor del elemento cambiando el color de letra a negro y en negritas*/
+.links a:hover {
+    box-shadow: inset 160px 0 0 0 #54b3d6;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/*A partir de aqui es para el contenido principal*/
+/*reglas para la zona principal
+Establecida con posición absoluta y una barra de scroll para recorrer el contenido*/
+main {
+    position: relative;
+    color: black;
+    width: auto;
+}
+
+/*Reglas para los encabezados h1
+Con el texto centrados*/
+main h1 {
+    text-align: center;
+}
+
+/*Reglas para los encabezados h2
+Con el texto centrados*/
+main h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+/*Reglas para la imagen con ID de la zona principal
+En una posición flotante a la izquierda y con un borde de color negro y tamaño ajustado*/
+.container>#MyPicture {
+    flex-basis: 40%;
+    width: 380px;
+    margin-left: 100px;
+    border: 2px solid black;
+}
+
+/*Reglas de estilo para la lista no ordenada*/
+.container>ul {
+    font-size: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+/*Reglas para los item de lista en las listas no ordenada
+Con ningún tipo de estilo*/
+ul li {
+    text-align: justify;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+/*Regla para los elementos linkCorreo
+Con nungún tipo de decoración*/
+.linkCorreo {
+    text-decoration: none;
+}
+
+/*Regla para los elementos linkCorreo en una lista ordenada
+Con letras a negritas al momento de pasar el cursor*/
+ul .linkCorreo:hover {
+    font-weight: bold;
+}
+
+/*Ajuste para la página de "aficiones"*/
+/*Estableciendo el tamaño de letras de los elementos de Aficiones*/
+.hobbies {
+    font-size: larger;
+}
+
+/*Estableciendo reglas para el elemento Book
+Con una imagén a la derecha y tamaño ajustado con un borde negro*/
+#Book {
+    float: right;
+    width: 250px;
+    border: 2px solid black;
+    margin-right: 200px;
+    margin-left: 10px;
+    clear: both;
+}
+
+/*Estableciendo reglas para el elemento Music
+Con una imagén a la derecha y tamaño ajustado con un borde negro*/
+#Music {
+    float: right;
+    width: 250px;
+    border: 2px solid black;
+    margin-right: 200px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+/*Estableciendo reglas para el elemento Game
+Con una imagén a la derecha y tamaño ajustado con un borde negro*/
+#Movies {
+    float: right;
+    width: 250px;
+    border: 2px solid black;
+    margin-right: 200px;
+    margin-left: 10px;
+    clear: both;
+}
+
+/*Estableciendo reglas para los elementos hr
+Con un tamaño determinado y con un color gris*/
+.hobbies hr {
+    width: 80%;
+    size: 10;
+    height: 10px;
+    border-width: 0;
+    background-color: gray;
+}
+
+/*Ajuste para la página de "contactame"
+Centrando y poniendo margenes en el contenido*/
+.DivForm {
+    float: center;
+    width: auto;
+    margin: 20px;
+    clear: both;
+    display: flex;
+    justify-content: center;
+}
+
+/*Reglas para los parrafos dentro del divisor con un margen*/
+.DivForm p {
+    margin-left: 40px;
+}
+
+/*Reglas para los fieldset dentro del divisor con un margen y un tamaño determinado*/
+.DivForm fieldset {
+    margin-left: 40px;
+    width: 200px;
+}
+
+/*Reglas para los input dentro del divisor con un margen izquierdo y el contenido centrado*/
+.DivForm input {
+    justify-content: center;
+    margin-left: 40px;
+}
+
+/* Pie de página
+con una posición absoluta y una imagen de fondo que cubre todo y con el color de letras en blanco*/
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(116, 159, 230);
+}
